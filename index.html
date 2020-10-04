@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="profile.component.css">
     </head>
     <body>
-        <section class="container">
+        <div class="container">
             <div class="wrapper">
                 <div class="circle">
                     <i class="pi pi-user" style="font-size: 2rem; color: white"></i>
@@ -18,35 +18,13 @@
                     <div class="user_reg_date">Зарегистрирован с 22 сентября 2020 г.</div>
                 </div>
             </div>
-        </section>
-        
-            <!-- <div class="menu_section">
-            <ul class="navigation" id="navigation">
-      <li>
-        Информация
-      </li>
-      <li>
-        Голосование
-      </li>
-      <li>
-        Инициативы
-      </li>
-      <li>
-        Голосование
-      </li>
-      <li class="switch" [routerLink]="['/' + appSettings?.PROFILE_APPEALS_ROUTE]" routerLinkActive="active">
-        Обращения
-      </li>
-            </ul>
-            </div> -->
-
+        </div>
         <div class="menu_section">
             <button pButton pRipple type="button" label="ИНФОРМАЦИЯ" class="p-button-raised p-button-success button_style">ИНФОРМАЦИЯ</button>
             <button pButton pRipple type="button" label="ГОЛОСОВАНИЕ" class="p-button-raised p-button-success button_style">ГОЛОСОВАНИЕ</button>
             <button pButton pRipple type="button" label="ИНИЦИАТИВА" class="p-button-raised p-button-success button_style">ИНИЦИАТИВА</button>
             <button pButton pRipple type="button" label="ОБРАЩЕНИЕ" class="p-button-raised p-button-success button_style">ОБРАЩЕНИЕ</button>
         </div>
-
         <div class="user_info_section">
             <div class="user_activity_section">
                 <div>Пройдено<br>голосований</div>
@@ -65,37 +43,36 @@
                 <div style="color: #32882e">0</div>
             </div>
         </div>
-
-        <div class="user_info">
-            <div class="some_name">
-                <div>
-                    <div class="user_info_data">ФИО</div>
-                    <input placeholder="Введите информацию">
+        <div class="form_wrapper">
+            <form class="user_info">
+                <div class="input_wrapper">
+                    <div class="user_info_item">
+                        <label>ФИО</label>
+                        <input placeholder="Введите информацию">
+                    </div>
+                    <div class="user_info_item">
+                        <label>Улица, на которой проживает горожанин</label>
+                        <input placeholder="Введите информацию">
+                    </div>
+                    <div class="user_info_item">
+                        <label>Электронная почта</label>
+                        <input placeholder="Введите информацию">
+                    </div>
+                    <div class="user_info_item">
+                        <label>Номер телефона</label>
+                        <input placeholder="Введите информацию">
+                    </div>
+                    <div class="user_info_item">
+                        <label>Улица, на которой проживает горожанин</label>
+                        <input placeholder="Введите информацию">
+                    </div>
+                    <div class="user_info_item">
+                        <label>СНИЛС</label>
+                        <input placeholder="Введите информацию">
+                    </div>
+                </div>
+                <button class="form_button">зарегистрироваться</button>
+            </form>
         </div>
-        <div>
-            <div class="user_info_data">Улица, на которой проживает горожанин</div>
-            <input placeholder="Введите информацию">
-        </div>
-        <div>
-            <div class="user_info_data">Электронная почта</div>
-            <input placeholder="Введите информацию">
-        </div>
-        </div>
-        <div class="some_name">
-            <div>
-                <div class="user_info_data">Номер телефона</div>
-                <input placeholder="Введите информацию">
-        </div>
-        <div>
-            <div class="user_info_data">Улица, на которой проживает горожанин</div>
-            <input placeholder="Введите информацию">
-        </div>
-        <div>
-            <div class="user_info_data">СНИЛС</div>
-            <input placeholder="Введите информацию">
-        </div>
-        <!--  <main class="main">
-        <router-outlet></router-outlet>
-        </main>-->
     </body>
 </html>
