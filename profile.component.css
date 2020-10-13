@@ -206,6 +206,9 @@ body {
     .user_reg_date {
         font-size: 16px;
     }
+    .menu_section {
+        margin: 20px 0;
+    }
     .button_style {
         width: 43%;
         height: 35px; 
@@ -214,7 +217,7 @@ body {
     }
     .user_activity_section  {
         width: 43%;
-        font-size: 14px;
+        font-size: 16px;
         margin: 7px;
     }
     .user_info_item {
@@ -227,14 +230,9 @@ body {
     }
     .user_info_item input {
         height: 30px;
+        width: 70%;
     }
     .user_info_item label {
-        font-size: 14px;
-    }
-    .user_info_item input::-webkit-input-placeholder {
-        font-size: 14px;
-    }
-    .user_info_item input::-moz-placeholder {
         font-size: 14px;
     }
     .input_icon_edit {
