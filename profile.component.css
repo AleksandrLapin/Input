@@ -6,7 +6,6 @@ body {
     padding: 0;
     font-family: 'Fira Sans', 'Roboto', sans-serif;
 }
-/*Container*/
 
 .container {
     background-color: #F0F2F3;
@@ -17,8 +16,6 @@ body {
 }
 
 .wrapper {
-    width: auto;
-    height: auto;
     max-width: 1280px;
     padding: 0 10px;
     margin: 0 auto;
@@ -38,8 +35,9 @@ body {
 }
 
 .circle {
-    height: 80px;
     width: 80px;
+    height: 80px;
+    display: block;
     border-radius: 50%;
     background-color: #9fd18b;
 }
@@ -106,40 +104,75 @@ body {
 }
 
 .form_wrapper {
-    width: 100%;
-    background-color: #F0F2F3;
-    padding: 50px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 50px 15px;
 }
 
 .user_info {
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .input_wrapper {
-    max-width: 900px;
-    margin: 0 auto;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+.user_info_item:first-child,
+.user_info_item:nth-child(2) {
+    border-top: 1px solid #bcbcbc;
+}
+
 .user_info_item {
-    width: 400px;
-    height: 70px;
-    margin: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 45%;
+    height: 100px;
+    margin: 0 10px;
     box-sizing: border-box;
+    border-bottom: 1px solid #bcbcbc;
 }
 
-.user_info label {
-
+.user_info_item label {
+    color: #bcbcbc;
+    width: auto;
 }
 
-.user_info input {
-    width: 100%;
+.user_info_item input {
+    width: 60%;
     height: 40px;
     box-sizing: border-box;
+    border: none;
+}
+
+.user_info_item input::-webkit-input-placeholder {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.user_info_item input::-moz-placeholder {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.input_icon_edit {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-image: url(img/icon.svg);
 }
 
 .form_button {
@@ -150,7 +183,7 @@ body {
     text-transform: uppercase;
     background-color: #488B44;
     border: none;
-    margin: 20px;
+    margin: 40px;
 }
 
 .form_button:hover {
@@ -158,42 +191,59 @@ body {
     background-color: #356932;
 }
 
-
-/*.menu_section ul {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  width: 100%;
-  border-top: 1px solid #ebeaf0;
-  border-bottom: 1px solid #ebeaf0;
-  padding: 1px;
-  margin: 0px;
+@media (max-width: 767px) {
+    .container {
+        height: 100px;
+    }
+    .circle {
+        width: 60px;
+        min-width: 60px;
+        height: 60px;
+    }
+    .user_name {
+        font-size: 24px;
+    }
+    .user_reg_date {
+        font-size: 16px;
+    }
+    .button_style {
+        width: 43%;
+        height: 35px; 
+        font-size: 14px;
+        margin: 7px;
+    }
+    .user_activity_section  {
+        width: 43%;
+        font-size: 14px;
+        margin: 7px;
+    }
+    .user_info_item {
+        flex: 1 1 90%;
+        height: 70px;
+        margin: 0;
+    }
+    .user_info_item:nth-child(2) {
+        border-top: none;
+    }
+    .user_info_item input {
+        height: 30px;
+    }
+    .user_info_item label {
+        font-size: 14px;
+    }
+    .user_info_item input::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+    .user_info_item input::-moz-placeholder {
+        font-size: 14px;
+    }
+    .input_icon_edit {
+        top: 35px;
+        right: 10px;
+    }
+    .form_button {
+        width: 240px;
+        height: 45px;
+    }
+    
 }
-
-.menu_section li {
-  list-style: none;
-  display: block;
-  text-decoration: none;
-  padding: 10px;
-  margin-right: 28px;
-}
-
-!*Main*!
-.container .main {
-  display: grid;
-  grid-template: 0 1fr / 1fr;
-  overflow: auto;
-}
-
-.navigation > li.switch:hover,
-.navigation > li.switch.active {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.navigation > li.switch.active {
-  height: 120%;
-  align-self: end;
-  border: 1px solid white;
-  color: green;
-}*/
