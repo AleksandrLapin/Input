@@ -15,7 +15,7 @@
                 </div>
                 <div class="user_short_info">
                     <div class="user_name">Муслим</div>
-                    <div class="user_reg_date">Зарегистрирован с 22 сентября 2020 г.</div>
+                    <div class="user_reg_date">Зарегистрирован 22 сентября 2020 г.</div>
                 </div>
             </div>
         </div>
@@ -44,53 +44,70 @@
             </div>
         </div>
         <div class="form_wrapper">
-            <form class="user_info">
-                <div class="input_wrapper">
-                    <div class="user_info_item">
-                        <label>ФИО</label>
-                        <input placeholder="Введите информацию">
-                        <div class="input_icon">
-                            <div class="input_icon_edit"></div>
-                        </div>
-                    </div>
-                    <div class="user_info_item">
-                        <label>Улица, на которой проживает горожанин</label>
-                        <input placeholder="Введите информацию">
-                        <div class="input_icon">
-                            <div class="input_icon_edit"></div>
-                        </div>
-                    </div>
-                    <div class="user_info_item">
-                        <label>Электронная почта</label>
-                        <input placeholder="Введите информацию">
-                        <div class="input_icon">
-                            <div class="input_icon_edit"></div>
-                        </div>
-                    </div>
-                    <div class="user_info_item">
-                        <label>Номер телефона</label>
-                        <input placeholder="Введите информацию">
-                        <div class="input_icon">
-                            <div class="input_icon_edit"></div>
-                        </div>
-                    </div>
-                    <div class="user_info_item">
-                        <label>Улица, на которой проживает горожанин</label>
-                        <input placeholder="Введите информацию">
-                        <div class="input_icon">
-                            <div class="input_icon_edit"></div>
-                        </div>
-                    </div>
-                    <div class="user_info_item">
-                        <label>СНИЛС</label>
-                        <input placeholder="Введите информацию">
-                        <div class="input_icon">
-                            <div class="input_icon_edit"></div>
-                        </div>
-                    </div>
+            <div class="input_wrapper">
+                <div class="user_info_item">
+                    <span class="info_hint">ФИО</span>
+                    <span class="info_sample">Иванов Иван Иваныч</span>
                 </div>
-                <button class="form_button">зарегистрироваться</button>
-            </form>
+                <div class="user_info_item">
+                    <span class="info_hint">Город</span>
+                    <span class="info_sample">Рио Де Женейро</span>
+                </div>
+                <div class="user_info_item">
+                    <span class="info_hint">Улица, на которой проживает горожанин</span>
+                    <span class="info_sample">Площадь Свободы д.1</span>
+                </div>
+                <div class="user_info_item">
+                    <span class="info_hint">Номер телефона</span>
+                    <span class="info_sample">+74951234567</span>
+                </div>
+                <div class="user_info_item">
+                    <span class="info_hint">Электронная почта</span>
+                    <span class="info_sample">ivanov@ivanov.iv</span>
+                </div>
+                <div class="user_info_item">
+                    <span class="info_hint">СНИЛС</span>
+                    <span class="info_sample">Введите информацию</span>
+                </div>
+            </div>
+            <button type="button" class="form_button">редактировать информацию</button>
+        </div>
+        <div class="modal_user_info">
+            <div class="modal_body">
+                <div class="modal_wrapper">
+                    <div class="modal_header">
+                        <p>Введите ваши данные</p>
+                    </div>
+                    <form class="modal_form">
+                        <div class="modal_info_item">
+                            <label>ФИО</label>
+                            <input placeholder="Иванов Иван Иваныч">
+                        </div>
+                        <div class="modal_info_item">
+                            <label>Город</label>
+                            <input placeholder="Рио Де Женейро">
+                        </div>
+                        <div class="modal_info_item">
+                            <label>Улица, на которой проживает горожанин</label>
+                            <input placeholder="Площадь Свободы д.1">
+                        </div>
+                        <div class="modal_info_item">
+                            <label>Номер телефона</label>
+                            <input placeholder="+74951234567">
+                        </div>
+                        <div class="modal_info_item">
+                            <label>Электронная почта</label>
+                            <input placeholder="ivanov@ivanov.iv">
+                        </div>
+                        <div class="modal_info_item">
+                            <label>СНИЛС</label>
+                            <input placeholder="Введите информацию">
+                        </div>
+                    <button type="button" class="modal_form_button">сохранить</button>
+                    <button type="button" class="modal_form_close"></button>
+                </form>
+                </div>
+            </div>
         </div>
     </body>
 </html>
